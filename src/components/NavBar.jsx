@@ -11,7 +11,6 @@ const navigate = useNavigate();
 
 const handleLogout = async() => {
   try {
-    console.log("heloooo!!!!!!!!!!!!!!!!!!!!!!");
     await axios.post(BASE_URL + "/logout", {}, { withCredentials : true });
     dispatch(removeUser());
     return navigate("/login");
@@ -30,8 +29,8 @@ const handleLogout = async() => {
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
         <div className="w-10 rounded-full">
           <img
-            alt="Tailwind CSS Navbar component"
-            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+            alt="photo"
+            src={user.photoUrl} />
         </div>
       </div>
       <ul

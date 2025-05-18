@@ -46,7 +46,7 @@ const Login= () =>{
 </fieldset>
     </div>
     <p className="text-red-500">{error}</p>
-    <div className="card-actions justify-center my-4">
+    <div className="card-actions justify-center my-2">
       <button className="btn btn-primary" onClick={handleLogin}>Login</button>
     </div>
   </div>
